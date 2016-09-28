@@ -1,0 +1,5 @@
+# Glitchy think on hover
+
+Copied from the interwebs.
+
+Crea una copia dell'immagine e la mette in un <div> con l'immagine originale, all'hover nasconde l'originale e mostra la versione glitchata. That's it that's all.
