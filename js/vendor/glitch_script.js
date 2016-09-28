@@ -7,6 +7,7 @@ $( document ).ready(function() {
   var height;
   var output = document.getElementById("output");
   var imageToGlitch = document.getElementById("image-to-glitch");
+  var container = document.querySelectorAll('.glitch-container')[0]
 
   canvas = document.createElement('canvas');
   canvas.width = imageToGlitch.width;
@@ -74,5 +75,8 @@ $( document ).ready(function() {
     context.putImageData(glitchedData.data, 0, 0);
     output.src = canvas.toDataURL();
   }
-  startGlitching();
+  container.onmouseenter = function() {
+    glitchAmount = Math.random() * 100;
+    startGlitching();
+  }
 });
